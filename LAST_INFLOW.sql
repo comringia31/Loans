@@ -76,7 +76,7 @@ ON CUSTOMER_ID = ACCOUNT_NO;
 
 SELECT * FROM mgodi_msisdn_trans;
 
--------------------------------------------------
+--------------------------sub query-----------------------
 
 DROP TABLE MGODI_MSISDN_LAST_TRANS PURGE;
 
@@ -126,7 +126,7 @@ ON A.CUSTOMER_ID = B.CUSTOMER_ID;
 
 SELECT * FROM MGODI_MSISDN_TRANSANCTION;
 
---------------------------------------------------------
+---------------------------pivoting-----------------------------
 
 CREATE TABLE MGODI_MSISDN_FINAL PARALLEL (DEGREE 64) AS
 SELECT * FROM (
